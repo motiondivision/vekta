@@ -2,15 +2,15 @@
 const config = {
   rootDir: "src",
   preset: "ts-jest",
-  testEnvironment: "jsdom",
+  // testEnvironment: "jsdom",
   collectCoverageFrom: [
     "**/*.{js,jsx,ts,tsx}",
+    "!**/*.{test.js,test.jsx,test.ts,test.tsx}",
     "!**/node_modules/**",
     "!**/__tests__/**",
   ],
-  testMatch: ["**/__tests__/**/*.test.(js|ts)?(x)"],
+  testMatch: ["/**/*.test.(js|ts)?(x)"],
   coverageDirectory: "<rootDir>/../coverage",
-  coveragePathIgnorePatterns: ["supported-elements.ts", "src/index.ts"],
 }
 
 module.exports = config
