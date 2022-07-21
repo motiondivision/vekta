@@ -1,7 +1,7 @@
 {
   "name": "vekta",
   "description": "A tiny 3D library",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "license": "MIT",
   "author": "Matt Perry",
   "main": "dist/main.cjs.js",
@@ -18,7 +18,6 @@
     "dev": "concurrently -c blue,red -n tsc,rollup --kill-others \"tsc --watch -p . --preserveWatchOutput\" \"rollup --c --watch --no-watch.clearScreen\"",
     "measure": "bundlesize"
   },
-  "dependencies": {},
   "bundlesize": [
     {
       "path": "./dist/size-index.js",
